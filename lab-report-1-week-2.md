@@ -8,6 +8,7 @@ On that website, make sure to choose the download that is appropriate for your o
 
 From there, follow the instructions of the VSCodeUserSetup.
 This step is only for those who do not have VSCode. If you do, then open VSCode and have it ready. 
+![Starter](VSCodeStarterPage.png)
 
 Step 2:
 
