@@ -28,7 +28,7 @@ You are now connected to the remote computer and can now try out some commands. 
 ![mkDir.png](mkDir.png)
 
 ## Step 4: Moving Files with scp
-`scp` is a command that will copy a file or folder from your computer to the remote computer. Create a java file to be transferred(I named mine newExample.java). The scp command needs to be given the name of the folder or file(`WhereAmI.java`) 
+`scp` is a command that will copy a file or folder from your computer to the remote computer. Create a java file to be copied with the following code.
 ```
 class WhereAmI {
   public static void main(String[] args) {
@@ -39,7 +39,7 @@ class WhereAmI {
   }
 }
 ```
-to be copied and the location(`cs15lwi22aec@ieng6.ucsd.edu:~/` but replace `aec` with your account). 
+The scp command needs to be given the name of the folder or file(`WhereAmI.java`) to be copied and the location(`cs15lwi22aec@ieng6.ucsd.edu:~/` but replace `aec` with your account). 
 ![scpWhereAmI](scpWhereAmI.png)
 After this, you can see that it has been copied correctly by doing the ls command and running the code.
 ![runWhereAmI](runWhereAmI.png)
@@ -66,9 +66,9 @@ Now you should be able to enter into your account without needing to type in a p
 
 
 ## Step 6: Optimizing Remote Running
-Running code on the same line can make remote running more efficient. For example, "ssh cs15lwi22@ieng6.ucsd.edu "ls"" will log into the account and run ls over there and then exit.
+Running code on the same line can make remote running more efficient. For example, `ssh cs15lwi22@ieng6.ucsd.edu "ls"` will log into the account and run `ls` over there and then exit.
 ![sameLine1](sameLine1.png)
-Typing "cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI" will copy WhereAmI.java to a new OtherMain.java file, compile OtherMain, and then run WhereAmI.
+Typing `cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI` will copy WhereAmI.java to a new OtherMain.java file, compile OtherMain, and then run WhereAmI.
 ![Done](Done.png)
 
 
