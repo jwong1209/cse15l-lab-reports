@@ -33,13 +33,17 @@ You are now connected to the remote computer and can now try out some commands. 
 After this, you can see that it has been copied correctly by doing the ls command and running the code.
 ![scpOriginal](scpOriginal.png)
 
-## Step 5: Setting a SSH Key
-Enter "ssh-keygen" into your terminal and then "/Users/jwong/.ssh/id_rsa"(switch jwong with your own) and keep pressing enter until you see a square appear. 
-![keyGen1](keyGen1.png)
-Enter "ssh cs15lwi22zz@ieng6.ucsd.edu"(with zz replaced with your account) to enter the remote computer and type "mkdir .ssh" into the terminal then type "exit". Now enter "scp /Users/jwong/.ssh/id_rsa.pub cs15lwi22@ieng6.ucsd.edu:~/.ssh/authorized_keys"(but with jwong switched out with yours).
-![keyGen2](keyGen2.png)
+## Step 5: Setting a SSH Key(Windows-Specific Since I Used Windows)
+I entered "ssh-keygen" into my terminal and then "/Users/jwong/.ssh/id_rsa"(switch jwong with your own) and kept pressing enter until the square appeared.
+![square](square.png) 
+
+Next open Windows PowerShell as administrator and type in the commands from "Get-Service ssh-agent | Set-Service -StartupType Manual" to "ssh-add C:\Users\jwong/.ssh/id_rsa" and then the commands from "ssh cs15lwi22aec@ieng6.ucsd.edu mkdir .ssh"(I entered in powershell but can be done in VSCode) to "scp C:\Users\jwong/.ssh/id_rsa.pub cs15lwi22aec@ieng6.ucsd.edu:~/.ssh/authorized_keys"(in powershell or VSCode).
+![correctPowerShell](correctPowerShell.png)
+Now you should be able to enter into your account without needing to type in a password.
+
 
 ## Step 6: Optimizing Remote Running
+Running code on the remote computer can be optimized to be quicker and more efficient.
 
 
 
