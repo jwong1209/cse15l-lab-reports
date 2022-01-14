@@ -13,11 +13,11 @@ From there, follow the instructions of the VSCodeUserSetup and open VSCode when 
 
 ## Step 2: Connecting Remotely
 
-Go to Settings, then go to Apps, and then go to Apps & Feautues, and click on Optional Features. 
+Go to Settings, then go to Apps, then go to Apps & Feautues, and click on Optional Features. 
 ![Settings](Settings.png)
 Click "Add a feature" and search for "OpenSSH Client" and "OpenSSH Server" and install them. 
 ![OpenSSHSearch](OpenSSHSearch.png)
-Enter `ssh cs15lwi22aec@ieng6.ucsd.edu` into your terminal but remember to switch out the `aec` with your course specific account and enter the password, and answer `yes` if prompted.
+Go to VSCode and enter `ssh cs15lwi22aec@ieng6.ucsd.edu` into your terminal but remember to switch out the `aec` with your course specific account and enter the password, and answer `yes` if prompted.
 ![TerminalSSH](TerminalSSH.png)
 
 
