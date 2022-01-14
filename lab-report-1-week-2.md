@@ -34,7 +34,7 @@ After this, you can see that it has been copied correctly by doing the ls comman
 ![scpOriginal](scpOriginal.png)
 
 ## Step 5: Setting a SSH Key(Windows-Specific Since I Used Windows)
-I entered `ssh-keygen` into my terminal and then `/Users/jwong/.ssh/id_rsa`(switch jwong with your own) and kept pressing enter until the square appeared.
+I entered `ssh-keygen` into my terminal and then `C:\Users\jwong/.ssh/id_rsa`(switch jwong with your own) and kept pressing enter until the square appeared.
 ![square](square.png) 
 
 Next open Windows PowerShell as administrator and type in the commands from 
