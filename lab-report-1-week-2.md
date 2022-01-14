@@ -1,6 +1,6 @@
 # **Lab Report 1 Week 2**
 
-## Step 1: Install Visual Studio Code(Skip if already installed)
+## Step 1: Install Visual Studio Code (Skip if Already Installed)
 If you have VSCode already installed then open VSCode and have it ready.
 ![Starter](VSCodeStarterPage.png)
 If not then go to [https://code.visualstudio.com/]( https://code.visualstudio.com/) to download the code.
