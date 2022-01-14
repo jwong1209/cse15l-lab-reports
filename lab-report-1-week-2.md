@@ -27,11 +27,22 @@ You are now connected to the remote computer and can now try out some commands. 
 ![multiCommands.png](multiCommands.png)
 ![mkDir.png](mkDir.png)
 
-## Step 4: Moving Files with `scp`
-`scp` is a command that will copy a file or folder from your computer to the remote computer. Create a java file to be transferred(I named mine newExample.java). The scp command needs to be given the name of the folder or file(`newExample.java`) to be copied and the location(`cs15lwi22aec@ieng6.ucsd.edu:~/` but replace `aec` with your account). 
-![scpCommand](scpCommand.png)
+## Step 4: Moving Files with scp
+`scp` is a command that will copy a file or folder from your computer to the remote computer. Create a java file to be transferred(I named mine newExample.java). The scp command needs to be given the name of the folder or file(`WhereAmI.java`) 
+```
+class WhereAmI {
+  public static void main(String[] args) {
+    System.out.println(System.getProperty("os.name"));
+    System.out.println(System.getProperty("user.name"));
+    System.out.println(System.getProperty("user.home"));
+    System.out.println(System.getProperty("user.dir"));
+  }
+}
+```
+to be copied and the location(`cs15lwi22aec@ieng6.ucsd.edu:~/` but replace `aec` with your account). 
+![scpWhereAmI](scpWhereAmI.png)
 After this, you can see that it has been copied correctly by doing the ls command and running the code.
-![scpOriginal](scpOriginal.png)
+![runWhereAmI](runWhereAmI.png)
 
 ## Step 5: Setting a SSH Key(Windows-Specific Since I Used Windows)
 I entered `ssh-keygen` into my terminal and then `C:\Users\jwong/.ssh/id_rsa`(switch jwong with your own) and kept pressing enter until the square appeared.
