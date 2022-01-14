@@ -1,4 +1,4 @@
-# **Lab Report**
+# **Lab Report 1 Week 2**
 
 ## Step 1: Install Visual Studio Code(Skip if already installed)
 If you have VSCode already installed then open VSCode and have it ready.
