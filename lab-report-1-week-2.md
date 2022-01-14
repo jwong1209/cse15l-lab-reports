@@ -28,4 +28,12 @@ You are now connected to the remote computer and can now try out some commands. 
 ![mkDir.png](mkDir.png)
 
 ## Step 4: Moving Files with scp
+"scp" is a command that will copy a file or folder from your computer to the remote computer. Create a java file to be transferred(I named mine newExample.java). The scp command needs to be given the name of the folder or file(newExample.java) to be copied and the location(cs15lwi22aec@ieng6.ucsd.edu:~/ but replace "aec" with your account). 
+![scpCommand](scpCommand.png)
+After this, you can see that it has been copied correctly by doing the ls command and running the code.
+![scpOriginal](scpOriginal.png)
+
+## Step 5: Setting a SSH Key
+
+
 
