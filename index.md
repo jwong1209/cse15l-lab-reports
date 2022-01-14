@@ -1,5 +1,5 @@
-# **Hello, world!**
-[Link](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+# **Jason Wong**
+[Lab Report 1 Week 2](https://jwong1209.github.io/cse15l-lab-reports/lab-report-1-week-2)
 
 *Test for Italic*
 ## Smaller Heading
