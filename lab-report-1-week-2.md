@@ -53,7 +53,7 @@ Next open Windows PowerShell as administrator and type in these commands.
 Get-Service ssh-agent | Set-Service -StartupType Manual
 Start-Service ssh-agent
 Get-Service ssh-agent
-ssh-add ~\.ssh\id_ed25519
+ssh-add C:\Users\jwong/.ssh/id_rsa
 ```
 Then enter these commands. 
 ```
