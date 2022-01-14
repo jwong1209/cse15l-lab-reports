@@ -23,7 +23,7 @@ Enter `ssh cs15lwi22aec@ieng6.ucsd.edu` into your terminal but remember to switc
 
 
 ## Step 3: Trying Some Commands
-You are now connected to the remote computer and can now try out some commands. Some useful commands we went over were `ls` which will show the files and folders in the directory, `cd` which will change the directory to the given directory, `pwd` which will print the path of the working directory, and `mkdir` which will make a directory with the given name,.
+You are now connected to the remote computer and can now try out some commands. Some useful commands to know are `ls` which will show the files and folders in the directory, `cd` which will change the directory to the given directory, `pwd` which will print the path of the working directory, and `mkdir` which will make a directory with the given name,.
 ![multiCommands.png](multiCommands.png)
 ![mkDir.png](mkDir.png)
 
@@ -45,7 +45,7 @@ After this, you can see that it has been copied correctly by doing the ls comman
 ![runWhereAmI](runWhereAmI.png)
 
 ## Step 5: Setting a SSH Key(Windows-Specific Since I Used Windows)
-I entered `ssh-keygen` into my terminal and then `C:\Users\jwong/.ssh/id_rsa`(switch jwong with your own) and kept pressing enter until the square appeared.
+Enter `ssh-keygen` into the terminal and then `C:\Users\jwong/.ssh/id_rsa`(switch jwong with your own) and keep pressing enter until the square appears.
 ![square](square.png) 
 
 Next open Windows PowerShell as administrator and type in these commands.
@@ -60,7 +60,7 @@ Then enter these commands.
 ssh cs15lwi22aec@ieng6.ucsd.edu mkdir .ssh
 scp C:\Users\jwong/.ssh/id_rsa.pub cs15lwi22aec@ieng6.ucsd.edu:~/.ssh/authorized_keys
 ```
-(I entered the last two in powershell but they can be entered in VSCode)
+(I entered the last two in Windows Powershell but they can be entered in VSCode)
 ![correctPowerShell](correctPowerShell.png)
 Now you should be able to enter into your account without needing to type in a password.
 
