@@ -27,7 +27,7 @@ You are now connected to the remote computer and can now try out some commands. 
 ![multiCommands.png](multiCommands.png)
 ![mkDir.png](mkDir.png)
 
-## Step 4: Moving Files with scp
+## Step 4: Moving Files with `scp`
 `scp` is a command that will copy a file or folder from your computer to the remote computer. Create a java file to be transferred(I named mine newExample.java). The scp command needs to be given the name of the folder or file(`newExample.java`) to be copied and the location(`cs15lwi22aec@ieng6.ucsd.edu:~/` but replace `aec` with your account). 
 ![scpCommand](scpCommand.png)
 After this, you can see that it has been copied correctly by doing the ls command and running the code.
@@ -37,17 +37,17 @@ After this, you can see that it has been copied correctly by doing the ls comman
 I entered `ssh-keygen` into my terminal and then `C:\Users\jwong/.ssh/id_rsa`(switch jwong with your own) and kept pressing enter until the square appeared.
 ![square](square.png) 
 
-Next open Windows PowerShell as administrator and type in the commands from 
+Next open Windows PowerShell as administrator and type in these commands.
 ```
 Get-Service ssh-agent | Set-Service -StartupType Manual
 Start-Service ssh-agent
 Get-Service ssh-agent
 ssh-add ~\.ssh\id_ed25519
 ```
-and then the commands
+Then enter these commands. 
 ```
 ssh cs15lwi22aec@ieng6.ucsd.edu mkdir .ssh
-scp C:\Users\jwong/.ssh/id_rsa.pub cs15lwi22aec@ieng6.ucsd.edu:~/.ssh/authorized_keys`
+scp C:\Users\jwong/.ssh/id_rsa.pub cs15lwi22aec@ieng6.ucsd.edu:~/.ssh/authorized_keys
 ```
 (I entered the last two in powershell but they can be entered in VSCode)
 ![correctPowerShell](correctPowerShell.png)
