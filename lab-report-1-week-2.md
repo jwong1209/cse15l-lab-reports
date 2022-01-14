@@ -1,16 +1,15 @@
 # **Lab Report**
 
 ## Step 1: Install Visual Studio Code(Skip if already installed)
-
-Go to [https://code.visualstudio.com/]( https://code.visualstudio.com/) to download the code.
+If you have VSCode already installed then open VSCode and have it ready.
+![Starter](VSCodeStarterPage.png)
+If not then go to [https://code.visualstudio.com/]( https://code.visualstudio.com/) to download the code.
 ![VSCodeWebsite](VSCodeWebsite.png)
 
 On that website, make sure to choose the download that is appropriate for your operating system.
 ![OperatingSystems](OperatingSystems.png)
 
-From there, follow the instructions of the VSCodeUserSetup.
-This step is only for those who do not have VSCode. If you do, then open VSCode and have it ready. 
-![Starter](VSCodeStarterPage.png)
+From there, follow the instructions of the VSCodeUserSetup and open VSCode when done.
 
 ## Step 2: Connecting Remotely
 
@@ -66,7 +65,7 @@ Now you should be able to enter into your account without needing to type in a p
 
 
 ## Step 6: Optimizing Remote Running
-Running code on the same line can make remote running more efficient. For example, `ssh cs15lwi22@ieng6.ucsd.edu "ls"` will log into the account and run `ls` over there and then exit.
+Running code on the same line can make remote running more efficient. For example, `ssh cs15lwi22aec@ieng6.ucsd.edu "ls"` will log into the account and run `ls` over there and then exit.
 ![sameLine1](sameLine1.png)
 Typing `cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI` will copy WhereAmI.java to a new OtherMain.java file, compile OtherMain, and then run WhereAmI.
 ![Done](Done.png)
