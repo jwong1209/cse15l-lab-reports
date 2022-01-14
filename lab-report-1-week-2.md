@@ -1,4 +1,6 @@
-Step 1: Install Visual Studio Code(Skip if already installed)
+#Lab Report
+
+##Step 1: Install Visual Studio Code(Skip if already installed)
 
 Go to [https://code.visualstudio.com/]( https://code.visualstudio.com/) to download the code.
 ![VSCodeWebsite](VSCodeWebsite.png)
@@ -10,5 +12,10 @@ From there, follow the instructions of the VSCodeUserSetup.
 This step is only for those who do not have VSCode. If you do, then open VSCode and have it ready. 
 ![Starter](VSCodeStarterPage.png)
 
-Step 2:
+##Step 2: Install OpenSSH if you are on Windows
+
+Go to Settings, then go to Apps, and then go to Apps & Feautues, and click on optional features. 
+![Settings](Settings.png)
+Click "Add a feature" and search for "OpenSSH Client" and "OpenSSH Server" and install. 
+![OpenSSHSearch](OpenSSHSearch.png)
 
