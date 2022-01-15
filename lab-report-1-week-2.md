@@ -59,7 +59,7 @@ Then enter these commands.
 ssh cs15lwi22aec@ieng6.ucsd.edu mkdir .ssh
 scp C:\Users\jwong/.ssh/id_rsa.pub cs15lwi22aec@ieng6.ucsd.edu:~/.ssh/authorized_keys
 ```
-(I entered the last two in Windows Powershell but they can be entered in VSCode)
+(I entered the last two commands in Windows Powershell but they can be entered in VSCode)
 ![correctPowerShell](correctPowerShell.png)
 Now you should be able to enter into your account without needing to type in a password.
 
