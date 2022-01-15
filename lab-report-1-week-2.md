@@ -43,7 +43,7 @@ The scp command needs to be given the name of the folder or file(`WhereAmI.java`
 After this, you can see that it has been copied correctly by doing the ls command and running the code.
 ![runWhereAmI](runWhereAmI.png)
 
-## Step 5: Setting a SSH Key(Windows-Specific Since I Used Windows)
+## Step 5: Setting a SSH Key (Windows)
 Enter `ssh-keygen` into the terminal and then `C:\Users\jwong/.ssh/id_rsa`(switch jwong with your own) and keep pressing enter until the square appears.
 ![square](square.png) 
 
