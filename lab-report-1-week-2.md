@@ -17,6 +17,10 @@ Go to Settings, then go to Apps, then go to Apps & Feautues, and click on Option
 ![Settings](Settings.png)
 Click "Add a feature" and search for "OpenSSH Client" and "OpenSSH Server" and install them. 
 ![OpenSSHSearch](OpenSSHSearch.png)
+
+Go to [https://sdacs.ucsd.edu/~icc/index.php](https://sdacs.ucsd.edu/~icc/index.php) to access your course specific account.
+![accountLink.png](accountLink.png)
+
 Go to VSCode and enter `ssh cs15lwi22aec@ieng6.ucsd.edu` into your terminal but remember to switch out the `aec` with your course specific account and enter the password, and answer `yes` if prompted.
 ![TerminalSSH](TerminalSSH.png)
 
