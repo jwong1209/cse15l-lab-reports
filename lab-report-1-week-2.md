@@ -73,6 +73,11 @@ Running code on the same line can make remote running more efficient. For exampl
 ![sameLine1](sameLine1.png)
 Typing `cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI` will copy WhereAmI.java to a new OtherMain.java file, compile OtherMain, and then run WhereAmI.
 ![Done](Done.png)
+Using the up arrow, you can redo the last command.
+
+KeyStrokes With No Techniques: 70
+
+KeyStrokes With Up Arrow: 3 
 
 
 
