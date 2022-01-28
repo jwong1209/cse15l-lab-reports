@@ -11,7 +11,7 @@ Symptom of Failure-Inducing Input:
 Explanation: The bug is the line in the code `currentIndex = closeParen + 1` which will reset the `currentIndex` back to the last parenthesis's index. This is an issue because if the last `)` is not at the end as in the case of `test-file2.md`, then the condition `currentIndex < markdown.length()` would never be fulfilled and thus cause the while loop to keep repeating and the inside code to keep traversing through the file. This is fixed by checking if one of the variables is equal to -1 and doing `return toReturn` if true because at least one of them will be if you tried to find the indexOf a bracket or parenthesis during one of the while loop's faulty iterations.
 
 ## Code Change 2: Fixing Code Giving Images as Links
-Fix for Image: ![imageGivenFix](imageGivenFix.png)
+Fix for Code Giving Images as Links: ![imageGivenFix](imageGivenFix.png)
 
 Link to Failure-Inducing Input: [https://github.com/jwong1209/markdown-parse/blob/c0518531ee48080ba5e5c76d54f7290ab257f3be/test-file4.md](https://github.com/jwong1209/markdown-parse/blob/c0518531ee48080ba5e5c76d54f7290ab257f3be/test-file4.md)
 
