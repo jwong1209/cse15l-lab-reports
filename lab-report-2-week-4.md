@@ -13,12 +13,12 @@ Explanation: The bug is the line in the code `currentIndex = closeParen + 1` whi
 ## Code Change 2: Fixing Code Giving Images as Links
 Fix for Image: ![](imageGivenFix.png)
 
-Link to Failure-Inducing Input:[https://github.com/jwong1209/markdown-parse/blob/c0518531ee48080ba5e5c76d54f7290ab257f3be/test-file4.md](https://github.com/jwong1209/markdown-parse/blob/c0518531ee48080ba5e5c76d54f7290ab257f3be/test-file4.md)
+Link to Failure-Inducing Input: [https://github.com/jwong1209/markdown-parse/blob/c0518531ee48080ba5e5c76d54f7290ab257f3be/test-file4.md](https://github.com/jwong1209/markdown-parse/blob/c0518531ee48080ba5e5c76d54f7290ab257f3be/test-file4.md)
 
 Symptom of Failure-Inducing Input:
 ![imageGiven](imageGiven.png)
 
-Explanation: The bug is that the code only uses the index of the brackets(`[` and `]`) and parenthesis(`(` and `)`) to decide what is a link or not. Since the format for a image is nearly identical except that the image has a `!` at the beginning, this causes the code to identify images as links  such as `cat.png` and `cow.png` from the `test-file4.md` file and add them to `toReturn`. To fix this, I used the exclamation mark as the differentiator and if a `[` had a `!` in front of it, then it would not pass the `(nextOpenBracket == 0 || markdown.indexOf("!", nextOpenBracket-1) != nextOpenBracket-1)` condition of the if statement and therefore the `toReturn.add(markdown.substring(openParen + 1, closeParen))` inside the if statement would not get activated. 
+Explanation: The bug is that the code only uses the index of the brackets(`[` and `]`) and parenthesis(`(` and `)`) to decide what is a link or not. Since the format for an image is similar to the link format with its use of brackets and parenthesis, this causes the code to identify images as links  such as `cat.png` and `cow.png` from the `test-file4.md` file and add them to `toReturn`. To fix this, I used the exclamation mark as the differentiator since image format has that at the start and if a `[` had a `!` in front of it, then it would mean its an image and would not pass the `(nextOpenBracket == 0 || markdown.indexOf("!", nextOpenBracket-1) != nextOpenBracket-1)` condition of the if statement and therefore the `toReturn.add(markdown.substring(openParen + 1, closeParen))` inside the if statement would not get activated. 
 
 ## Code Change 3: Fixing Code Giving Links When Characters Between `)` and `(`
 Fix for Code Giving Link Despite Characters Between Bracket and Parenthesis:
