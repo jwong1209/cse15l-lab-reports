@@ -20,7 +20,7 @@ Symptom of Failure-Inducing Input:
 
 Explanation: The bug is that the code only uses the index of the brackets(`[` and `]`) and parenthesis(`(` and `)`) to decide what is a link or not. Since the format for an image is similar to the link format with its use of brackets and parenthesis, this causes the code to identify images as links  such as `cat.png` and `cow.png` from the `test-file4.md` file and add them to `toReturn`. To fix this, I used the exclamation mark as the differentiator since image format has that at the start and if a `[` had a `!` in front of it, then it would mean its an image and would not pass the `(nextOpenBracket == 0 || markdown.indexOf("!", nextOpenBracket-1) != nextOpenBracket-1)` condition of the if statement and therefore the `toReturn.add(markdown.substring(openParen + 1, closeParen))` inside the if statement would not get activated. 
 
-## Code Change 3: Fixing Code Giving Links When Characters Between `)` and `(`
+## Code Change 3: Fixing Code Giving Links When Characters Exist Between `]` and `(`
 Fix for Code Giving Link Despite Characters Between Bracket and Parenthesis:
 ![gapNotLinkFix](gapNotLinkFix.png)
 
