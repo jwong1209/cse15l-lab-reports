@@ -18,7 +18,7 @@ Link to Failure-Inducing File:[https://github.com/jwong1209/markdown-parse/blob/
 Symptom of Failure-Inducing Input:
 ![imageGiven](imageGiven.png)
 
-Explanation: The code only uses the index of the brackets and parenthesis to decide what is a link or not. Since the format for a image is nearly identical except that the image has a `!` at the beginning, this causes the code to identify images as links  such as `cat.png` and `cow.png` from the `test-file4.md` file and add them to `toReturn`. To fix this, I used the exclamation mark as the differentiator and if a `[` had a `!` in front of it, then it would not pass the `(nextOpenBracket == 0 || markdown.indexOf("!", nextOpenBracket-1) != nextOpenBracket-1)` part of the if statement. 
+Explanation: The code only uses the index of the brackets(`[` and `]`) and parenthesis(`(` and `)`) to decide what is a link or not. Since the format for a image is nearly identical except that the image has a `!` at the beginning, this causes the code to identify images as links  such as `cat.png` and `cow.png` from the `test-file4.md` file and add them to `toReturn`. To fix this, I used the exclamation mark as the differentiator and if a `[` had a `!` in front of it, then it would not pass the `(nextOpenBracket == 0 || markdown.indexOf("!", nextOpenBracket-1) != nextOpenBracket-1)` part of the if statement. 
 
 ## Code Change 3: Fixing Code Giving Links When Gap Between
 Fix for Code Giving Link Despite Characters Between Bracket and Parenthesis:
