@@ -1,6 +1,6 @@
 # **Lab Report 2 Week 4**
 
-## Code Change 1: Fixing Infinite While Loop
+## Code Change 1: Fixing Infinite While Loop Caused by `)` Not Being the Last Character
 Fix for Infinite While Loop: ![infiniteWhileLoopFix](infiniteWhileLoopFix.png)
 
 Link to Failure-Inducing Input: [https://github.com/jwong1209/markdown-parse/blob/c0518531ee48080ba5e5c76d54f7290ab257f3be/test-file2.md](https://github.com/jwong1209/markdown-parse/blob/c0518531ee48080ba5e5c76d54f7290ab257f3be/test-file2.md)
