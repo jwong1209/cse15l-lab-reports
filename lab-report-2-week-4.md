@@ -1,6 +1,6 @@
 # **Lab Report 2 Week 4**
 
-## Code Change 1: Fixing Infinite While Loop Caused by `)` Not Being the Last Character
+## Code Change 1: Fixing Infinite While Loop Caused by `)` Not Being the Last Character of the File
 Fix for Infinite While Loop Caused by `)` Not Being the Last Character: ![infiniteWhileLoopFix](infiniteWhileLoopFix.png)
 
 Link to Failure-Inducing Input: [https://github.com/jwong1209/markdown-parse/blob/c0518531ee48080ba5e5c76d54f7290ab257f3be/test-file2.md](https://github.com/jwong1209/markdown-parse/blob/c0518531ee48080ba5e5c76d54f7290ab257f3be/test-file2.md)
@@ -8,7 +8,7 @@ Link to Failure-Inducing Input: [https://github.com/jwong1209/markdown-parse/blo
 Symptom of Failure-Inducing Input: 
 ![Infinite While Loop](infiniteWhileLoop.png)
 
-Explanation: The bug is the line `currentIndex = closeParen + 1` which will reset the `currentIndex` back to the last parenthesis's index. This is an issue because if the last `)` is not at the end as in the case of `test-file2.md`, then the condition `currentIndex < markdown.length()` would never be fulfilled and thus cause the while loop to keep repeating and the code in the body of the loop to keep traversing through the file. This is an infinite loop and the symptom of the bug. This bug is fixed by checking if one of the variables is equal to -1 and doing `return toReturn` if true because at least one of them will be if you tried to find the indexOf a bracket(`[` and `]`) or parenthesis(`(` and `)`) during one of the while loop's faulty iterations.
+Explanation: The bug is the code `currentIndex = closeParen + 1` which will reset the `currentIndex` back to the last parenthesis's index. This is an issue because if the last `)` is not at the end of the file as in the case of `test-file2.md`, then the condition `currentIndex < markdown.length()` would never be fulfilled and thus cause the while loop to keep repeating and the code in the body of the loop to keep traversing through the file. This is an infinite loop and the symptom of the bug. This bug is fixed by checking if one of the variables is equal to -1 and doing `return toReturn` if true because at least one of the variables will be -1 if you tried to find the indexOf a bracket(`[` and `]`) or parenthesis(`(` and `)`) during one of the while loop's faulty iterations since those iterations calls the method `indexOf()` from currentIndex which is past the last `)`'s index.
 
 ## Code Change 2: Fixing Code Giving Images as Links
 Fix for Code Giving Images as Links: ![imageGivenFix](imageGivenFix.png)
