@@ -7,6 +7,5 @@
 ## Smaller Heading
 ![Image](https://upload.wikimedia.org/wikipedia/commons/9/9a/PNG_transparency_demonstration_2.png)
  
-I made changes
-
+I made change
 ![myimage](2021-08-04.png)
