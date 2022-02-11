@@ -3,6 +3,8 @@
 
 [Lab Report 2 Week 4](https://jwong1209.github.io/cse15l-lab-reports/lab-report-2-week-4)
 
+[Lab Report 3 Week 6](https://jwong1209.github.io/cse15l-lab-reports/lab-report-3-week-6)
+
 *Test for Italic*
 ## Smaller Heading
 ![Image](https://upload.wikimedia.org/wikipedia/commons/9/9a/PNG_transparency_demonstration_2.png)
