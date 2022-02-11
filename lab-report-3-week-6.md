@@ -3,8 +3,9 @@
 ## Streamlining ssh Configuration
 
 ## `.ssh/config` File and Where It Was Edited
-This is my `.ssh/config` file. I chose my alias to be `ieng6` like how the professor did, so I typed in `Host ieng6` at the top. I edited the config file with VSCode. 
-
+This is my `.ssh/config` file and where it is located. 
+`.ssh/config` location: ![fileLocationImage.png](fileLocationImage.png)
+I edited the config file with VSCode. I chose my alias to be `ieng6` like how the professor did, so I had `Host ieng6` at the top.
 `.ssh/config` file: ![configImage](configImage.png)
 
 ## Logging in With Alias `ieng6`
