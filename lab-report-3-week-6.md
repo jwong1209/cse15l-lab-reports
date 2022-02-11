@@ -6,6 +6,7 @@
 This is my `.ssh/config` file and where it is located. 
 
 `.ssh/config` location: ![fileLocationImage.png](fileLocationImage.png)
+
 I edited the config file with VSCode. I chose my alias to be `ieng6` like how the professor did, so I had `Host ieng6` at the top.
 
 `.ssh/config` file: ![configImage](configImage.png)
