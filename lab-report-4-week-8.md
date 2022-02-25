@@ -17,7 +17,7 @@ Snippet 2 on Reviewed Implementation: The implementation I reviewed with my lab 
 ![snippet2Other](snippet2Other.png)
 
 
-##Snippet 3
+## Snippet 3
 Test for Snippet 3:
 ![snippet3Test](snippet2Test.png)
 Snippet 3 on My Implementation: My implementation failed the test since it should have provided only `https://ucsd-cse15l-w22.github.io/` but gave more links than that. 
