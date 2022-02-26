@@ -19,7 +19,7 @@ Snippet 2 on Reviewed Implementation: The implementation I reviewed with my lab 
 
 ## Snippet 3
 Test for Snippet 3:
-![snippet3Test](snippet2Test.png)
+![snippet3Test](snippet3Test.png)
 Snippet 3 on My Implementation: My implementation failed the test since it should have provided only `https://ucsd-cse15l-w22.github.io/` but gave more links than that. 
 ![snippet3Mine](snippet3Mine.png)
 Snippet 3 on Reviewed Implementation: The implementation I reviewed with my group failed the test since it provided no links when it should have given `https://ucsd-cse15l-w22.github.io/`. 
