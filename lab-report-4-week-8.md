@@ -1,7 +1,9 @@
 # **Lab Report 4 Week 8**
 
 Link to My Repository: [https://github.com/jwong1209/markdown-parse](https://github.com/jwong1209/markdown-parse)
+
 Link to Other Repository: [https://github.com/yayajjiang/markdown_inperson](https://github.com/yayajjiang/markdown_inperson)
+
 ## Snippet 1
 Test for Snippet 1:
 ![snippet1Test](snippet1Test.png)
