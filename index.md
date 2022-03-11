@@ -7,6 +7,8 @@
 
 [Lab Report 4 Week 8](https://jwong1209.github.io/cse15l-lab-reports/lab-report-4-week-8)
 
+[Lab Report 5 Week 10](https://jwong1209.github.io/cse15l-lab-reports/lab-report-5-week-10)
+
 *Test for Italic*
 ## Smaller Heading
 ![Image](https://upload.wikimedia.org/wikipedia/commons/9/9a/PNG_transparency_demonstration_2.png)
